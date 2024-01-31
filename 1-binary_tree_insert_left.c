@@ -22,6 +22,8 @@ return (NULL); }
 if (parent->left != NULL)
 {
 tmp = parent->left;
+tmp->parent = left_node;
+
 }
 
 left_node->n = value;
