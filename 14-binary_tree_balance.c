@@ -52,6 +52,6 @@ int balance;
 if (tree == NULL)
 return (0);
 
-balance = (int) binary_tree_height(tree->left) - (int) binary_tree_height(tree->right);
+balance = binary_tree_height(tree->left) - binary_tree_height(tree->right);
 return (balance);
 }
