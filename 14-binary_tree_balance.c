@@ -7,7 +7,7 @@
  *
  *Return: return max number
 */
-size_t max(size_t a, size_t b)
+int max(int a, int b)
 {
 if (a <= b)
 return (b);
@@ -21,9 +21,9 @@ return (a);
  *
  *Return: your function must return 0, if tree == NULL
 */
-size_t binary_tree_height(const binary_tree_t *tree)
+int binary_tree_height(const binary_tree_t *tree)
 {
-size_t height = 0, left_height, right_height;
+int height = 0, left_height, right_height;
 
 if (tree == NULL)
 return (-1);
@@ -52,6 +52,6 @@ int balance;
 if (tree == NULL)
 return (0);
 
-balance = binary_tree_height(tree->left) - binary_tree_height(tree->right);
+balance = (binary_tree_height(tree->left)) - (binary_tree_height(tree->right));
 return (balance);
 }
