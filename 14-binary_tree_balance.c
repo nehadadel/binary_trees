@@ -15,7 +15,7 @@ else
 return (a);
 }
 /**
- *binary_tree_height - that measures the height of a binary tree
+ *_binary_tree_height - that measures the height of a binary tree
  *
  *@tree:is a pointer to the root node of the tree to measure the height.
  *
@@ -52,6 +52,6 @@ int balance;
 if (tree == NULL)
 return (0);
 
-balance = (_binary_tree_height(tree->left)) - (_binary_tree_height(tree->right));
+balance = _binary_tree_height(tree->left) - _binary_tree_height(tree->right);
 return (balance);
 }
